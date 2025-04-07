@@ -4,10 +4,12 @@ import com.codeborne.selenide.SelenideElement;
 import elements.Button;
 import elements.Checkbox;
 import elements.Input;
+import lombok.extern.log4j.Log4j2;
 
 import static com.codeborne.selenide.Selenide.$x;
 import static com.codeborne.selenide.Selenide.open;
 
+@Log4j2
 public class RegistrationPage extends BasePage{
 
     public static final SelenideElement OK_BUTTON = $x("//button[@type='submit']");

@@ -3,10 +3,12 @@ package pages;
 import com.codeborne.selenide.SelenideElement;
 import elements.Button;
 import elements.Dropdown;
+import lombok.extern.log4j.Log4j2;
 
 import static com.codeborne.selenide.Selenide.$x;
 import static com.codeborne.selenide.Selenide.open;
 
+@Log4j2
 public class SettingsPage extends BasePage{
 
     public static final SelenideElement SETTINGS = $x("//*[contains(text(), 'Settings')]");

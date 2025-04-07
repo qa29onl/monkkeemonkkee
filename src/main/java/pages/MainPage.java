@@ -4,10 +4,12 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import elements.Button;
 import elements.Input;
+import lombok.extern.log4j.Log4j2;
 
 import static com.codeborne.selenide.Selenide.$x;
 import static com.codeborne.selenide.Selenide.open;
 
+@Log4j2
 public class MainPage extends BasePage{
 
     public static final SelenideElement CREATE_NEW_ENTRY = $x("//*[@title='Create an entry']");
